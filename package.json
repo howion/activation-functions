@@ -1,0 +1,28 @@
+{
+  "name": "activation-functions",
+  "version": "1.0.0",
+  "description": "Javascript implementation of some activation functions",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/howion/activation-functions.git"
+  },
+  "author": "howion",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/howion/activation-functions/issues"
+  },
+  "homepage": "https://github.com/howion/activation-functions#readme",
+  "keywords": [
+    "deep-learning",
+    "activation-functions",
+    "activation-function",
+    "activation",
+    "ai",
+    "artificial-intelligence",
+    "neural-network"
+  ]
+}
