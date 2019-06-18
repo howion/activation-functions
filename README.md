@@ -11,7 +11,7 @@ In artificial neural networks, the activation function of a node defines the out
 
 ## Installation
 
-From [NPM](npmjs.com/package/activation-functions)
+From [NPM](https://www.npmjs.com/package/activation-functions)
 ```bash
 $ npm install activation-functions
 ```
@@ -42,8 +42,6 @@ $ npm install activation-functions
 
 ## Usage
 
-> **$x** must be **Radian**
-
 ```js
 import * as activation from 'activation-function'
 
@@ -53,7 +51,7 @@ activation.Sigmoid($x)
 activation.TanH($x)
 activation.ArcTan($x)
 activation.SoftSign($x)
-activation.ISRU($a)($x) // COEFFICIENT IS PREDEFINED
+activation.ISRU($a)($x) // REQUIRES A COEFFICIENT
 activation.ReLU($x)
 activation.LReLU($x)
 activation.PReLU($a, $x)
