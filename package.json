@@ -1,24 +1,74 @@
 {
-  "name": "activation-functions",
-  "version": "2.0.0",
-  "description": "Javascript implementation of some activation functions",
-  "main": "lib/index.js",
-  "scripts": {},
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/howion/activation-functions.git"
-  },
-  "author": "howion",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/howion/activation-functions/issues"
-  },
-  "homepage": "https://github.com/howion/activation-functions#readme",
-  "keywords": [
-    "machine-learning",
-    "deep-learning",
-    "neural-network",
-    "activation-functions",
-    "activation-function"
-  ]
+    "name": "activation-functions",
+    "version": "3.0.0",
+    "description": "Zero-dependency, tree-shakeable TypeScript implementation of common neural-network activation functions",
+    "private": false,
+    "type": "module",
+    "sideEffects": false,
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "exports": {
+        ".": {
+            "types": "./dist/index.d.ts",
+            "import": "./dist/index.js",
+            "default": "./dist/index.js"
+        }
+    },
+    "files": [
+        "dist",
+        "README.md",
+        "LICENSE"
+    ],
+    "scripts": {
+        "build": "bun build ./src/index.ts --outdir=./dist --target=node --format=esm --minify --sourcemap=linked && bun dts-bundle-generator src/index.ts -o dist/index.d.ts",
+        "format": "biome format --write .",
+        "lint": "biome lint .",
+        "prepack": "bun run build",
+        "deploy": "bun prepack && bun publish"
+    },
+    "devDependencies": {
+        "@biomejs/biome": "^2.4.12",
+        "dts-bundle-generator": "^9.5.1",
+        "typescript": "^6"
+    },
+    "engines": {
+        "node": ">=18"
+    },
+    "author": {
+        "email": "howionwastaken@gmail.com",
+        "name": "howion",
+        "url": "https://github.com/howion"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/howion/activation-functions.git"
+    },
+    "homepage": "https://github.com/howion/activation-functions#readme",
+    "bugs": {
+        "url": "https://github.com/howion/activation-functions/issues"
+    },
+    "license": "MIT",
+    "publishConfig": {
+        "access": "public"
+    },
+    "keywords": [
+        "activation-function",
+        "activation-functions",
+        "deep-learning",
+        "elu",
+        "esm",
+        "gelu",
+        "machine-learning",
+        "mish",
+        "neural-network",
+        "relu",
+        "sigmoid",
+        "silu",
+        "softplus",
+        "swish",
+        "tanh",
+        "tree-shakeable",
+        "typescript",
+        "zero-dependencies"
+    ]
 }

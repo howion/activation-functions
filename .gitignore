@@ -1,0 +1,131 @@
+##########################################################################################################################
+## CUSTOM
+##########################################################################################################################
+
+/.nosync
+
+##########################################################################################################################
+## GENERAL
+##########################################################################################################################
+
+## OUTPUT FOLDERS
+out
+build
+dist
+
+## KEYS FOLDER
+keys
+
+## GENERAL CACHE FILES/FOLDERS
+.cache
+.vscode-test
+.eslintcache
+.stylelintcache
+.parcel-cache
+.history
+.ionide
+.sonda
+
+## PACKAGE MANAGERS
+node_modules/
+
+.yarn/*
+!.yarn/releases
+!.yarn/patches
+!.yarn/plugins
+!.yarn/sdks
+!.yarn/versions
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+## VSCODE
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+
+## NEXTJS
+/.next
+
+## ASTRO
+/.astro
+
+## SvelteKit
+.svelte-kit
+
+## VERCEL
+.vercel
+
+## TYPESCRIPT
+*.tsbuildinfo
+next-env.d.ts
+
+## CERTIFICATES
+*.pem
+*.key
+*.crt
+*.cer
+*.der
+*.priv
+*.p8
+
+## ENV FILES
+.env
+.env.production
+.env*.local
+
+## WINDOWS
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+## MACOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+*.icloud
+
+## VIM
+Session.vim
+Sessionx.vim
+.netrwhist
+tags
+[._]*.un~
+
+## JETBRAINS
+.idea/*
+
+## EMACS
+# -*- mode: gitignore; -*-
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
